@@ -8,6 +8,10 @@ local parsers = require "nvim-treesitter.parsers"
 
 local M = {}
 
+local function builtin_center_buffer()
+  vim.cmd("norm! zz")
+end
+
 local function move(opts)
   -- opts includes query_strings_regex, query_group, forward, start, winid
   -- start: bool or nil. If true, choose the start of the node, and false is for the end.
