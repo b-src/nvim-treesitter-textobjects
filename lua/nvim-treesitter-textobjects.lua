@@ -40,6 +40,7 @@ function M.init()
         disable = {},
         is_supported = M.has_textobjects,
         set_jumps = true,
+        auto_center = false,
         goto_next_start = {},
         goto_next_end = {},
         goto_previous_start = {},

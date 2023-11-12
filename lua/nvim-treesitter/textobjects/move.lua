@@ -101,6 +101,9 @@ local function move(opts)
       end
     end
     ts_utils.goto_node(best_match and best_match.node, not best_start, not config.set_jumps)
+    if config.auto_center then
+      builtin_center_buffer()
+    end
   end
 end
 
